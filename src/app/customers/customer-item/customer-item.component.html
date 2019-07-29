@@ -1,0 +1,18 @@
+
+<td scope="row">
+  {{no}}
+</td>
+<td>
+  <input class="form-control" type="text" name="firstname" (change)="changed()" [value]="item.firstname" [(ngModel)]="item.firstname"/>
+</td>
+<td>
+  <input class="form-control" type="text" name="lastname" (change)="changed()" [value]="item.lastname" [(ngModel)]="item.lastname"/>
+</td>
+<td>
+  <input class="form-control" type="text" name="taxid" (change)="changed()" [value]="item.taxId" [(ngModel)]="item.taxId"/>
+</td>
+<td>
+  <button (click)=removeItem()>
+    <i class="fa fa-trash"></i>
+  </button>
+</td>
